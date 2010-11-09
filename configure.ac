@@ -21,7 +21,7 @@ AC_PROG_CXX
 
 AC_CONFIG_FILES([Makefile
                  src/Makefile
-		 src/libexec/Makefile
+		 src/echo/Makefile
 		 src/mock/Makefile
 		 src/net/Makefile
 		])

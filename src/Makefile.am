@@ -1,4 +1,4 @@
 SUBDIRS = \
-	libexec \
+	echo \
 	mock \
 	net
