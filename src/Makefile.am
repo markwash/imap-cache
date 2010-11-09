@@ -1,1 +1,4 @@
-SUBDIRS = net
+SUBDIRS = \
+	libexec \
+	mock \
+	net
