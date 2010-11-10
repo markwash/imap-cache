@@ -10,6 +10,7 @@ AM_INIT_AUTOMAKE([-Wall -Werror foreign])
 
 # Checks for programs.
 AC_PROG_CXX
+AC_PROG_RANLIB
 
 # Checks for libraries.
 
@@ -24,5 +25,7 @@ AC_CONFIG_FILES([Makefile
 		 src/echo/Makefile
 		 src/mock/Makefile
 		 src/net/Makefile
+		 src/test/Makefile
+		 src/test/echo/Makefile
 		])
 AC_OUTPUT

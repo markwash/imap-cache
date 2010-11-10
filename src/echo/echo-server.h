@@ -13,7 +13,7 @@ namespace echo {
 
 class EchoServer {
  public:
-  EchoServer(::imapcache::net::TcpSocketInterface *socket);
+  explicit EchoServer(::imapcache::net::TcpSocketInterface *socket);
 };
 
 }  // namespace echo

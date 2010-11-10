@@ -25,15 +25,15 @@ class WriteHandlerInterface {
 
 class TcpSocketInterface {
  public:
-  virtual void read_some(char *buffer, std::size_t max_length,
-                         ReadHandlerInterface *handler) = 0;
-  virtual void read_all(char *buffer, std::size_t length,
-                        ReadHandlerInterface *handler) = 0;
-  virtual void write_some(const char *buffer, std::size_t max_length,
-                          WriteHandlerInterface *handler) = 0;
-  virtual void write_all(const char *buffer, std::size_t length,
-                         WriteHandlerInterface *handler) = 0;
-  virtual ~TcpSocketInterface();
+//  virtual void read_some(char *buffer, std::size_t max_length,
+//                         ReadHandlerInterface *handler) = 0;
+//  virtual void read_all(char *buffer, std::size_t length,
+//                        ReadHandlerInterface *handler) = 0;
+//  virtual void write_some(const char *buffer, std::size_t max_length,
+//                          WriteHandlerInterface *handler) = 0;
+//  virtual void write_all(const char *buffer, std::size_t length,
+//                         WriteHandlerInterface *handler) = 0;
+  virtual ~TcpSocketInterface() {}
 };
 
 }  // namespace net

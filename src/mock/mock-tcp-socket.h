@@ -9,17 +9,6 @@ namespace imapcache {
 namespace mock {
 
 class MockTcpSocket : public ::imapcache::net::TcpSocketInterface {
-
- public:
-  virtual void read_some(char *buffer, std::size_t max_length,
-                         ::imapcache::net::ReadHandlerInterface *handler);
-  virtual void read_all(char *buffer, std::size_t length,
-                        ::imapcache::net::ReadHandlerInterface *handler);
-  virtual void write_some(const char *buffer, std::size_t max_length,
-                          ::imapcache::net::WriteHandlerInterface *handler);
-  virtual void write_all(const char *buffer, std::size_t length,
-                         ::imapcache::net::WriteHandlerInterface *handler);
-  ~MockTcpSocket() {}
 };
 
 }  // namespace mock

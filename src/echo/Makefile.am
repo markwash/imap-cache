@@ -1,11 +1,8 @@
 AM_CXXFLAGS = -I$(top_srcdir)/src
 
-check_PROGRAMS = \
-	echo-server-test
+noinst_LIBRARIES = \
+	libecho.a
 
-echo_server_test_SOURCES = \
-	echo-server-test.cc
-
-echo_server_test_LDFLAGS = -lboost_unit_test_framework-mt
-
-TESTS = $(check_PROGRAMS)
+libecho_a_SOURCES = \
+	echo-server.h \
+	echo-server.cc

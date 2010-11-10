@@ -1,6 +1,7 @@
 SUBDIRS = \
 	echo \
 	mock \
-	net
+	net \
+	test
 
 TESTS = run_cpplint.sh
