@@ -12,16 +12,19 @@ class Error {
 };
 
 class ReadHandlerInterface {
+ public:
   virtual void handle_read(const Error &error, std::size_t length_read) = 0;
   virtual ~ReadHandlerInterface();
 };
 
 class WriteHandlerInterface {
+ public:
   virtual void handle_write(const Error &error, std::size_t length_written) = 0;
   virtual ~WriteHandlerInterface();
 };
 
 class TcpSocketInterface {
+ public:
   virtual void read_some(char *buffer, std::size_t max_length,
                          ReadHandlerInterface *handler) = 0;
   virtual void read_all(char *buffer, std::size_t length,
