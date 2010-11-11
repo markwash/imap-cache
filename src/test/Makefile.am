@@ -1,2 +1,3 @@
 SUBDIRS = \
-	echo
+	echo \
+	mock

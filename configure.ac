@@ -27,5 +27,6 @@ AC_CONFIG_FILES([Makefile
 		 src/net/Makefile
 		 src/test/Makefile
 		 src/test/echo/Makefile
+		 src/test/mock/Makefile
 		])
 AC_OUTPUT
