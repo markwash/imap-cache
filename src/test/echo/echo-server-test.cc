@@ -16,4 +16,5 @@ struct F {
 };
 
 BOOST_FIXTURE_TEST_CASE(test, F) {
+  socket.add_read_packet("hello world\n");
 }

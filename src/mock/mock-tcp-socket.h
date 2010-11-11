@@ -9,6 +9,8 @@ namespace imapcache {
 namespace mock {
 
 class MockTcpSocket : public ::imapcache::net::TcpSocketInterface {
+ public:
+  void add_read_packet(const char *packet);
 };
 
 }  // namespace mock
